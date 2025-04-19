@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Changement d'image</title>
+    <link rel="stylesheet" href="../../style/style.css.css"> 
+</head>
+<body id="inspirations">
+	<div><h1>Le nouvel Age</h1></div> 
+
+    <table id="menu" border="1">
+	    <tr>
+		    <th><div class="dropdown">
+                    <button class="dropdown-btn">écriture</button>
+                    <div class="dropdown-content">
+                        <a href="#">le résumé</a>
+                        <a href="#">l'histoire</a>
+                    </div>
+                </div>
+            </th>
+
+		    <th><div class="dropdown">
+                <button class="dropdown-btn">personnages</button>
+                <div class="dropdown-content">
+                    <a href="#">Ambre</a>
+                    <a href="#">Liam</a>
+                    <a href="#">Marnie</a>
+                </div>
+            </div>
+            </th>
+
+		    <th><div class="dropdown">
+                <button class="dropdown-btn">inspirations</button>
+                <div class="dropdown-content">
+                    <a href="#">paysages</a>
+                    <a href="#">sons</a>
+                    <a href="#">poses</a>
+                </div>
+            </div>
+            </th>
+
+		    <th><div class="dropdown">
+                <button class="dropdown-btn">contact</button>
+                <div class="dropdown-content">
+                    <a href="#">instagram</a>
+                    <a href="#">youtube</a>
+                </div>
+            </div>
+            </th>
+	    </tr>
+    </table><br/> 
+
+
+    <video src="../../vidéos/foret.mp4" width=640  height=480 controls poster="vignette.jpg"><br> </video>
+
+    <!-- Conteneur pour l'image avec un état survolé -->
+    <div class="image-container">
+        <img class="image-normal" src="../../images/paysage1.jpg" alt="Image 1" height="400" width="300">
+        <img class="image-hover" src="../../images/paysage2.jpg" alt="Image 2" height="400" width="300">
+    </div>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%); /* Centre la vidéo dans la fenêtre */
+            z-index: -1; /* Place la vidéo derrière les autres éléments */
+        }
+    
+        /* Ajoutez d'autres styles ici, tels que le texte, les boutons, etc. */
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+    </head>
+    <body>
+    
+    <video autoplay loop muted>
+        <source src="background/backgroundpaysage.mp4" type="video/mp4">
+        <!-- Ajoutez des formats vidéo supplémentaires si nécessaire -->
+        Votre navigateur ne supporte pas la lecture de vidéos.
+    </video>
