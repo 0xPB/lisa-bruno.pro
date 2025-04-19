@@ -22,23 +22,22 @@ header {
   text-align: center;
 }
 
-/* Footer commun */
-footer {
-  background-color: #4B0082;
-  color: white;
-  text-align: center;
-  padding: 1em;
-  margin-top: auto; /* pousse le footer en bas */
-}
-
-/* Liens dans le header */
 nav a {
   color: white;
   margin: 0 15px;
   text-decoration: none;
 }
 
-/* Bouton CV dans le header */
+/* Footer commun */
+footer {
+  background-color: #4B0082;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: auto;
+}
+
+/* Bouton CV */
 .download-cv {
   background-color: white;
   color: #4B0082;
@@ -50,7 +49,81 @@ nav a {
   margin-left: 20px;
 }
 
+/* Titres */
+h2 {
+  color: #4B0082;
+  text-align: center;
+}
+
+.card h3 {
+  color: #4B0082;
+}
+
+/* Main */
 main {
   flex: 1;
   padding: 20px;
+}
+
+/* Boutons */
+button {
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #370062;
+}
+
+/* Style des cards */
+.card {
+  max-width: 750px;
+  margin: 40px auto;
+  background: linear-gradient(to bottom right, #ffffff, #f1e7ff);
+  border-radius: 16px;
+  border: 2px solid #4B0082;
+  box-shadow: 0 6px 15px rgba(75, 0, 130, 0.15);
+  padding: 25px 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(75, 0, 130, 0.25);
+}
+
+
+.card-content {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.card-image {
+  flex: 1;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.card-image img,
+.card-image video {
+  max-width: 100%;
+  max-height: 250px;
+  border-radius: 8px;
+  object-fit: contain;
 }
