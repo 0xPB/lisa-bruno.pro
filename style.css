@@ -1,37 +1,56 @@
-/* style.css */
-body {
+/* Structure générale pour coller le footer en bas */
+html, body {
+  height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
-  color: #000;
-  background-color: #fff;
+  padding: 0;
 }
 
-header, footer {
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+/* Header commun */
+header {
   background-color: #4B0082; /* violet foncé */
   color: white;
   padding: 1em;
   text-align: center;
 }
 
-nav a {
-  margin: 0 15px;
+/* Footer commun */
+footer {
+  background-color: #4B0082;
   color: white;
+  text-align: center;
+  padding: 1em;
+  margin-top: auto; /* pousse le footer en bas */
+}
+
+/* Liens dans le header */
+nav a {
+  color: white;
+  margin: 0 15px;
   text-decoration: none;
 }
 
+/* Bouton CV dans le header */
+.download-cv {
+  background-color: white;
+  color: #4B0082;
+  padding: 5px 10px;
+  border: 2px solid white;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-left: 20px;
+}
+
 main {
+  flex: 1;
   padding: 20px;
-}
-
-button {
-  background-color: #4B0082;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 20px;
-}
-
-button:hover {
-  opacity: 0.9;
 }
