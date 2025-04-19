@@ -37,6 +37,15 @@ footer {
   margin-top: auto;
 }
 
+footer a {
+  color: #fff;
+}
+footer a:hover {
+  opacity: .7;
+  text-decoration: underline;
+  transition: .3s all;
+}
+
 /* Bouton CV */
 .download-cv {
   background-color: white;
